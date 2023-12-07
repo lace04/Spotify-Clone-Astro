@@ -25,13 +25,12 @@ import { playlists } from '@/lib/data';
 
   <div class='bg-zinc-900 rounded-lg p-2 flex-1'>
     <ul>
-      <SideMenuItem href='/#'>
+      <SideMenuItem href='/'>
         <LibraryIcon />
          Tu biblioteca
       </SideMenuItem>
-      {
-        playlists.map((playlist) => <SideMenuCard playlist={playlist} />)
-      }
+
+      {playlists.map((playlist) => <SideMenuCard playlist={playlist} />)}
     </ul>
   </div>
 </nav>

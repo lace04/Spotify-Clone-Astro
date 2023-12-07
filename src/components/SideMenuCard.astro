@@ -12,7 +12,7 @@ const artistsString = artists.join(', ');
 ---
 
 <a
-  href={`/playlist/{$id}`}
+  href={`/playlist/${id}`}
   class='playlist-item flex relative p-2 overflow-hidden items-center gap-5 rounded-md hover:bg-zinc-800'
 >
   <picture class='h-12 w-12 flex-none'>
@@ -24,7 +24,12 @@ const artistsString = artists.join(', ');
   </picture>
 
   <div class='flex flex-auto flex-col truncate'>
-    <h4 class='text-white text-sm'>{title}</h4>
-    <span class="text-xs text-zinc-500">{artistsString}</span>
+    <h4 class='text-white text-sm'>
+      {title}
+    </h4>
+
+    <span class='text-xs text-gray-400'>
+      {artistsString}
+    </span>
   </div>
 </a>
